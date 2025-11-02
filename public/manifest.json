@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ClimaNow",
+  "name": "ClimaNow - Next-Gen Weather App",
+  "description": "Your beautiful, AI-powered weather companion with advanced forecasts, interactive maps, and personalized insights.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +11,61 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait-primary",
+  "theme_color": "#1e40af",
+  "background_color": "#0f172a",
+  "categories": ["weather", "utilities", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Current Weather",
+      "short_name": "Current",
+      "description": "View current weather conditions",
+      "url": "/?view=current",
+      "icons": [{ "src": "icon-current.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Weather Map",
+      "short_name": "Map",
+      "description": "Interactive weather map",
+      "url": "/?view=map",
+      "icons": [{ "src": "icon-map.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Weather Assistant",
+      "short_name": "Assistant",
+      "description": "AI weather assistant",
+      "url": "/?view=assistant",
+      "icons": [{ "src": "icon-assistant.png", "sizes": "96x96" }]
+    }
+  ]
 }
